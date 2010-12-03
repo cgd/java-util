@@ -539,6 +539,23 @@ public class SequenceUtilities
     }
     
     /**
+     * Convert the given double array to a double list
+     * @param doubleArray
+     *          the double array to convert
+     * @return
+     *          the list of doubles
+     */
+    public static List<Double> toDoubleList(double[] doubleArray)
+    {
+        List<Double> doubleList = new ArrayList<Double>(doubleArray.length);
+        for(double currDouble: doubleArray)
+        {
+            doubleList.add(currDouble);
+        }
+        return doubleList;
+    }
+
+    /**
      * Convert the long list into a primitive array
      * @param longList
      *          the long list
