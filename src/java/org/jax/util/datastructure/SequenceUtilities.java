@@ -639,6 +639,23 @@ public class SequenceUtilities
         }
         return shortList;
     }
+    
+    /**
+     * Convert the given byte list into a primitive array
+     * @param byteList
+     *          the byte list to convert to an array
+     * @return
+     *          the array of bytes
+     */
+    public static byte[] toByteArray(List<Byte> byteList)
+    {
+        byte[] byteArray = new byte[byteList.size()];
+        for(int i = 0; i < byteArray.length; i++)
+        {
+            byteArray[i] = byteList.get(i);
+        }
+        return byteArray;
+    }
 
     /**
      * Determine if the given list is sorted
