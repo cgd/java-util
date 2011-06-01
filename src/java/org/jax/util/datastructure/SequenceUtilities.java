@@ -658,6 +658,23 @@ public class SequenceUtilities
     }
 
     /**
+     * Convert the given byte array to a byte list
+     * @param byteArray
+     *          the byte array to convert
+     * @return
+     *          the list of bytes
+     */
+    public static List<Byte> toByteList(byte[] byteArray)
+    {
+        List<Byte> byteList = new ArrayList<Byte>(byteArray.length);
+        for(byte currByte: byteArray)
+        {
+            byteList.add(currByte);
+        }
+        return byteList;
+    }
+    
+    /**
      * Determine if the given list is sorted
      * @see java.util.Collections#sort(List)
      * @param list
